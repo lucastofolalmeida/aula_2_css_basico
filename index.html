@@ -3,75 +3,63 @@
     <head>
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Workshop CSS básico</title>
+        <title>Site do batman</title>
 
     </head>
-    <body>
-        <header>
-            <h1>Workshop CSS básico</h1>
-            <nav>
-                <ul>
-                    <li><a href="https://youtu.be/OWOjRdmpM6I?si=m0aZTWkD3PNBXCgi"> início </a></li>
+    <body id="topo">
+        <div class="container" id="pagina">
+            <header class="box" id="cabecalho">
+                <div class="header-interno">
+                    <h1 class="titulo"> Site do Batman </h1>
+                    <p class="subtitulo">
+                        Gotham City: <strong>vigilâmcia</strong>, <em>estratégia</em> e tecnologia.
+                    </p>
+                </div>
+            </header>
+
+            <nav class="box" id="menu">
+                <ul class="nav">
+                    <li><a class="nav-link" href="#apresentacao">Quem é?</a></li>
+                    <li><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li><a class="nav-link" href="#rodape">Rodapé</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section>
-                <h2>introdução</h2>
+            
+            <main id="conteudo">
+                <section class="box" id="apresentacao">
+                    <h2>Quem é o batman?</h2>
+                    <p>
+                        Batman (Bruce Wayne) é um personagem da DC comics
+                         que atua como justiceiro (sem ninguém ter pedido isso a ele) de Gotham.
+                          Ele não tem superpoderes: sua força está em <strong>treinamento</strong>,
+                           <em>tecnologia</em> e riqueza (muita riqueza).
+                    </p>
+                    <p>
+                        Em várias histórias Gotham representa
+                        problemas sociais: desigualdade, corrupção e violência urbana. 
+                        Alguns quadrinhos usam o Batman como forma de <strong>crítica social</strong>
+                        , mostrando como falhas nas instituições, interesses econômicos
+                        e autoritarismo afetam principalmente quem tem menos direitos e oportunidades.
+                    </p>
+                </section>
 
-                <p>Página estruturada com <strong>HTML</strong> 
-                semântico para aplicar estilos com <strong>CSS</strong> 
-                você também pode usar <em>ênfase</em> no texto </p>
-            </section>
-
-            <section>
-                <h2> Lista de tópicos </h2>
-                <ul>
-                    <li>Estrutura básica</li>
-                    <li>navegação</li>
-                    <li>Imagens</li>
-                    <li>tabelas</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>imagem</h2>
-                <img src="https://picsum.photos/800/400" alt="imagem de exemplo">
-            </section>
-
-            <section>
-                <h2>tabela de conteúdos</h2>
-                <table border="1">
-                    <thead><!--cabeçalho-->
-                        <tr>
-                            <th>Recurso</th>
-                            <th>Descrição</th>
-                        </tr>
-                    </thead>
-                    <tbody><!--corpo-->
-                        <tr>
-                            <td>Header</td>
-                            <td>Parte superior da página</td>
-                        </tr>
-                        <tr>
-                            <td>Main</td>
-                            <td>Conteúdo principal</td>
-                        </tr>
-                        <tr>
-                            <td>Footer</td>
-                            <td>Rodapé</td>
-                        </tr>
-                    </tbody>
-                    <tfoot><!--rodapé-->
-                        <tr>
-                            <td colspan="2">Exemplo de estrutura organizada.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-        </main>
-        <footer>
-            <p>2026 - projeto educacional de HTML e CSS</p>
-        </footer>
+                <section class="box" id="galeria">
+                    <h2>Galeria</h2>
+                    <div class="gallery" id="galeria-imagens">
+                        <img class="bat-img" src="batman gordo.jpg" width="220" height="120" alt="batman gordão">
+                        <img class="bat-img" src="batman taça.jfif" width="220" height="120" alt="batman sendo campeão">
+                        <img class="bat-img" src="batman.jfif" width="220" height="120" alt="batman.">
+                    </div>
+                </section>
+            </main>
+            <footer class="box" id="rodape">
+                <p>
+                    <a class="link" href="#topo">Topo</a>
+                </p>
+                <p>
+                    Exemplo de website para treino de HTML e CSS
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
